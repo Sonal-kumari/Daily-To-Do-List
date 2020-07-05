@@ -1,0 +1,65 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>ToDo List</title>
+
+        <!-- Font Awesome icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Custom CSS -->
+         <link href="cascading_style_sheet/style.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+      <!-- Wrapper div -->
+      <div class="flip-container" id="main-container">   
+         <div class="flipped">
+        
+        <!-- Div front side  -->
+        
+         <div class="front">
+          <h1>Daily ToDo List</h1>
+            <i class="fa fa-pencil fa-4x" aria-hidden="true"></i>
+            <i class="fa fa-list fa-4x" aria-hidden="true"></i>
+            <i class="fa fa-coffee fa-4x" aria-hidden="true"></i>
+      </div> <!-- end front side-->
+        
+      <!-- Div: Back side -->
+        
+      <div class="back">
+          <h1>Add items</h1>
+      <div class="row">
+      <!-- Input field and Add button -->
+         <div class="col-md-12">
+        <input type="text" id="todoInput" value=""> 
+        <button type="button" class="btn btn-primary" onclick="addItem()" id="addButton">Add</button>
+        <button type="button" class="btn btn-primary" onclick="clearList()" id="clearButton">Clear</button></div> <!-- end col-md -12 -->
+        
+      <!-- Div where item list will appear -->
+      <div class="col-md-12" id="listItems">
+          <ul id="myUl"> </ul>
+      </div> 
+        <!-- end col-md-12 -->
+        </div> 
+       <!-- end row -->
+         </div>
+        <!-- back -->
+        </div>
+        <!-- end flipped -->
+      </div><!-- end of main flip container -->
+
+            <!-- custom JavaScript -->
+        <script src="javascript/main.js"></script>
+
+    </body>
+
+    </html>
